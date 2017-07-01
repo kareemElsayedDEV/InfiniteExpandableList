@@ -1,7 +1,10 @@
 # InfiniteExpandableList
 the idea of infiniteExpandableList is that allows you to create infinite number of expandable lists with many levels
 the views can be customized and a viewholder can be used to more interact with clicks and customed views
+
 <img src="https://github.com/kareemElsayedDEV/InfiniteExpandableList/blob/master/Screenshot_2017-07-01-04-42-37.png" width="320" height="568" />
+<img src="https://media.giphy.com/media/kjFmsXNUyX8Zi/giphy.gif" width="320" height="568" />
+
 ## Requirements
 Min SDK Version of 19
 
