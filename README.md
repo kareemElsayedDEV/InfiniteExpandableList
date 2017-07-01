@@ -112,3 +112,23 @@ there are 2 methods that can be used to access the data,view in each viewHolder 
 getView();
 getData();
 ```
+The library do create a dynamic padding to each added item to create the illusion of parent& childs relations
+and these values can be edited from here-default ones are <strong>pixelsPaddingTop</strong> 5px , <strong>pixelsPaddingBottom</strong> 5px , <strong>pixelsPaddingLeft</strong> 20px , <strong>pixelsPaddingRight</strong> 5px
+```
+public void setPixelsPadding ( int pixelsPaddingRight, int pixelsPaddingLeft, int pixelsPaddingTop, int pixelsPaddingBottom ) {
+ this.pixelsPaddingRight = pixelsPaddingRight;
+ this.pixelsPaddingLeft = pixelsPaddingLeft;  
+  this.pixelsPaddingTop = pixelsPaddingTop;
+  this.pixelsPaddingBottom = pixelsPaddingBottom;
+}
+ ```
+ and the library have another option in hand which allows childs not to be removed, means that more than one parent can be expanded and this is disapled by default
+ change the value by calling this method
+ ```
+public void setClearOnClick ( boolean clearOnClick ) {
+ this.clearOnClick = clearOnClick;
+}
+ ```
+### Bugs
+list doesn't work well with ```setClearOnClick()``` is set to false
+also there is limitation with some layouts as the library do create a padding caluclated by the item level and the-can be modified- default padding value which view all items in the same level-as showen in the example(example has the BUG!)-
