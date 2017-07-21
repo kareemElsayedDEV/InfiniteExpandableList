@@ -1,5 +1,6 @@
 package com.kareem.infiniteexpandablelist;
 
+import android.app.Activity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
@@ -301,5 +302,13 @@ public class InfiniteExpandableList implements View.OnClickListener {
 		this.pixelsPaddingLeft = pixelsPaddingLeft;
 		this.pixelsPaddingTop = pixelsPaddingTop;
 		this.pixelsPaddingBottom = pixelsPaddingBottom;
+	}
+
+//	public InfiniteExpandableListInterface getParent () {
+//		return parent;
+//	}
+
+	public Activity getParentActivity () {
+		return parent.getActivity();
 	}
 }

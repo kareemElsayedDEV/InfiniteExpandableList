@@ -30,6 +30,8 @@ public class dayViewHolder extends InfiniteExpandableListViewHolder {
 	@Override
 	public void onInfiniteExpandableListViewItemIsCollapsing ( Object data, int level, int position ) {
 		image.setImageResource(R.mipmap.arrow_right);
+		getView();
+		getData();
 	}
 
 	@Override

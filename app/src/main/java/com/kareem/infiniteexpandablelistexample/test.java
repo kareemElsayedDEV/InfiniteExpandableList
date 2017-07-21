@@ -18,17 +18,17 @@ import com.kareem.infiniteexpandablelist.InfiniteExpandableListInterface;
 
 public class test extends AppCompatActivity implements InfiniteExpandableListInterface  {
 	public static InfiniteExpandableList getAdapter () {
-		return adapter;
+		return infiniteExpandableList;
 	}
 
-	static InfiniteExpandableList adapter;
+	static InfiniteExpandableList infiniteExpandableList;
 
 	@Override
 	protected void onCreate ( @Nullable Bundle savedInstanceState ) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.container);
-		adapter = new InfiniteExpandableList(this);
-		adapter.createLevel(new String[]{ "Saturday", "Sunday", "Monday" }, dayViewHolder.class, R.layout.day_view);
+		infiniteExpandableList= new InfiniteExpandableList(this);
+		infiniteExpandableList.createLevel(new String[]{ "Saturday", "Sunday", "Monday" }, dayViewHolder.class, R.layout.day_view);
 	}
 
 	@Override
